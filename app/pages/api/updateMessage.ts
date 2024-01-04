@@ -35,7 +35,6 @@ export default async function updateMessage(
         systemProgram: web3.SystemProgram.programId,
       },
     });
-    console.log(txn);
 
     const message = await program.account.message.fetch(
       messageAccount.publicKey
